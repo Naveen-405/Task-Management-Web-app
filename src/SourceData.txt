@@ -1,0 +1,77 @@
+src/
+│
+├── app/
+│   ├── router/
+│   │   ├── AppRouter.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   └── PublicRoute.jsx
+│   │
+│   └── providers/
+│       └── AppProviders.jsx
+│
+├── context/
+│   └── auth/
+│       ├── AuthContext.jsx
+│       ├── AuthReducer.js
+│       ├── AuthActions.js
+│       ├── AuthTypes.js
+│       └── useAuth.js
+│
+├── services/
+│   ├── api/
+│   │   ├── axios.js
+│   │   └── endpoints.js
+│   │
+│   └── auth/
+│       └── authService.js
+│ 
+├── pages/
+│   ├── auth/
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   │
+│   ├── dashboard/
+│   │   └── Dashboard.jsx
+│   │
+│   ├── tasks/
+│   │   ├── Tasks.jsx
+│   │   ├── TaskDetails.jsx
+│   │   ├── CreateTask.jsx
+│   │   └── EditTask.jsx
+│   │
+│   └── settings/
+│       └── Settings.jsx
+│
+├── components/
+│   ├── common/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── Loader.jsx
+│   │   └── Modal.jsx
+│   │
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── MainLayout.jsx
+│   │
+│   └── tasks/
+│       ├── TaskCard.jsx
+│       ├── TaskList.jsx
+│       └── TaskFilters.jsx
+│
+├── hooks/
+│   ├── useDebounce.js
+│   ├── useLocalStorage.js
+│   └── useFetch.js
+│
+├── utils/
+│   ├── token.js
+│   ├── validators.js
+│   └── constants.js
+│
+├── styles/
+│   ├── globals.css
+│   └── variables.css
+│
+├── App.jsx
+└── main.jsx
