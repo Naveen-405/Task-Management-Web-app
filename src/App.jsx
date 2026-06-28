@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LoginPage from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
-import Dashboard from "./pages/dashboard/Dashboard"
+import Dashboard from "./pages/dashboard/Dashboard";
 import Test from "./Test";
 import { Alert } from "./components/common/Alerts";
+import MainLayout from "./components/layout/MainLayout";
 
 const App = () => {
   const [alerts, setAlerts] = useState(null);
@@ -37,15 +38,15 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage setAlerts={setAlerts} />} />
-
           <Route
             path="/register"
             element={<Register setAlerts={setAlerts} />}
           />
-
-          <Route path="/dashboard" element={<Dashboard />}/>
-
           <Route path="/test" element={<Test />} />
+          
+          <Route element={<MainLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
