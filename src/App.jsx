@@ -37,13 +37,13 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<LoginPage setAlerts={setAlerts} />} />
+          <Route path="/" element={<LoginPage setAlerts={setAlerts} />} />
           <Route
             path="/register"
             element={<Register setAlerts={setAlerts} />}
           />
           <Route path="/test" element={<Test />} />
-          
+
           <Route element={<MainLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>

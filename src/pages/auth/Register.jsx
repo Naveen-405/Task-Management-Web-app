@@ -41,7 +41,7 @@ export default function Register({ setAlerts }) {
           phone: "",
           email: "",
         });
-        navigate("/login");
+        navigate("/");
       }
     } catch (err) {
       if (err.response) {
@@ -142,7 +142,7 @@ export default function Register({ setAlerts }) {
           <p className="text-center font-medium text-sm text-black">
             Already a member?{" "}
             <Link
-              to="/login"
+              to="/"
               className="text-[#99e2aa] text-sm font-semibold hover:text-green-600 transition-colors"
             >
               Login
